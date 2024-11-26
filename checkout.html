@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Nettbutikk</title>
-    <link href="resources/icons/css/fontawesome.css" rel="stylesheet"/>
-    <link href="resources/icons/css/brands.css" rel="stylesheet"/>
-    <link href="resources/icons/css/solid.css" rel="stylesheet"/>
+    <title>Kasse - Nettbutikk</title>
+    <link href="resources/icons/css/fontawesome.css" rel="stylesheet">
+    <link href="resources/icons/css/brands.css" rel="stylesheet">
+    <link href="resources/icons/css/solid.css" rel="stylesheet">
     <link href="resources/css/styles_2.css" rel="stylesheet">
 </head>
 <body>
@@ -31,50 +31,56 @@
         </ul>
     </header>
 
-    <main>
+    <main class="flex-container">
         <h1 id="space-headline">Kasse</h1>
-        <section>
+        <section class="shopping-bag">
             <h2>1. SHOPPINGBAGEN DIN</h2>
             <article>
                 <img src="https://picsum.photos/400" alt="Produktbilde">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p class="space-paragraph">Farge: rød</p>
+                <span>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p class="margin-remove">Kr 1999</p>
+                    <p class="space-paragraph margin-remove">Farge: rød</p>
+                </span>
             </article>
             <article>
                 <img src="https://picsum.photos/400" alt="Produktbilde">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p class="space-paragraph">Farge: rød</p>
+                <span>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p class="margin-remove">Kr 1999</p>
+                    <p class="space-paragraph margin-remove">Farge: rød</p>
+                </span>
             </article>
             <article>
                 <img src="https://picsum.photos/400" alt="Produktbilde">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p class="space-paragraph">Farge: rød</p>
+                <span>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p class="margin-remove">Kr 1999</p>
+                    <p class="space-paragraph margin-remove">Farge: rød</p>
+                </span>
             </article>
         </section>
 
-        <section>
+        <section class="flex-container-checkout">
             <h2>2. DINE OPPLYSNINGER</h2>
             <p>Leveringsadresse</p>
             <form class="form-container">
-                <label for="fornavn"></label>
-                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*">
-                <label for="etternavn"></label>
-                <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*">
-                <label for="gateadresse"></label>
-                <input type="text" id="gateadresse" name="gateadresse" placeholder="Gateadresse*">
-                <label for="postnummer"></label>
-                <input type="text" id="postnummer" name="postnummer" placeholder="Postnummer*">
-                <label for="poststed"></label>
-                <input type="text" id="poststed" name="poststed" placeholder="Poststed*">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Ola*">
+                <label for="etternavn">Etternavn</label>
+                <input type="text" id="etternavn" name="etternavn" placeholder="Nordmann*">
+                <label for="gateadresse">Gateadresse</label>
+                <input type="text" id="gateadresse" name="gateadresse" placeholder="B R A Veien 4*">
+                <label for="postnummer">Postnummer</label>
+                <input type="text" id="postnummer" name="postnummer" placeholder="1757*">
+                <label for="poststed">Poststed</label>
+                <input type="text" id="poststed" name="poststed" placeholder="Halden*">
                 <button type="submit">Lagre</button>
                 <button type="reset">Avbryt</button>
             </form>
         </section>
 
-        <section>
+        <section class="flex-container-checkout">
             <h2>3. LEVERING</h2>
             <form class="radio-group">
                 <input type="radio" id="ekspress-hjem" name="levering" value="ekspress-hjem">
@@ -88,7 +94,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="flex-container-checkout">
             <h2>4. BETALING</h2>
             <p><strong>BETAL MED KORT</strong></p>
             <form class="form-container">
@@ -121,10 +127,10 @@
         <section id="kontakt" class="footer-content">
             <h2>Kontakt</h2>
             <section>
-                <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
-                <p><strong>Telefon:</strong> 69 60 80 00</p>
-                <p><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
-                <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+                <p class="margin-remove"><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                <p class="margin-remove"><strong>Telefon:</strong> 69 60 80 00</p>
+                <p class="margin-remove"><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+                <p class="margin-remove"><strong>Åpningstider:</strong> Stenger 15:00</p>
             </section>
         </section>
         <section class="footer-content">
@@ -137,7 +143,7 @@
         </section>
         <section class="footer-content">
             <h2>Sosiale medier</h2>
-            <ul>
+            <ul id="horizontal">
                 <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>

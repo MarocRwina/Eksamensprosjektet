@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Nettbutikk</title>
-    <link href="resources/icons/css/fontawesome.css" rel="stylesheet"/>
-    <link href="resources/icons/css/brands.css" rel="stylesheet"/>
-    <link href="resources/icons/css/solid.css" rel="stylesheet"/>
+    <title>Produkt - Nettbutikk</title>
+    <link href="resources/icons/css/fontawesome.css" rel="stylesheet">
+    <link href="resources/icons/css/brands.css" rel="stylesheet">
+    <link href="resources/icons/css/solid.css" rel="stylesheet">
     <link href="resources/css/styles_2.css" rel="stylesheet">
 </head>
 <body>
@@ -25,9 +25,9 @@
             </ul>
         </nav>
         <ul>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-heart"></i>
-            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </header>
 
@@ -39,50 +39,50 @@
                 <li><a href="#product-name"><strong>Produktnavn</strong></a></li>
             </ul>
         </nav>
-        <a href="product.html">
-            <section class="product-img">
-                <img src="https://picsum.photos/600" alt="Stort produktbilde">
-                <img src="https://picsum.photos/400" alt="Lite produktbilde 1">
-                <img src="https://picsum.photos/400" alt="Lite produktbilde 2">
-                <img src="https://picsum.photos/400" alt="Lite produktbilde 3">
-            </section>
-        </a>
 
-        <article id="product-name">
-            <h2>Produktnavn</h2>
-            <a href="#">MERKENAVN</a>
-            <p>5 195 kr inkl. mva.</p>
-            <p>Farge: <strong>Rød</strong></p>
-        </article>
+        <section class="product-img">
+            <article class="picture-container">
+              <img src="https://picsum.photos/600" alt="Stort produktbilde" id="picture1">
+              <img src="https://picsum.photos/400" alt="Lite produktbilde 1" id="picture2">
+              <img src="https://picsum.photos/400" alt="Lite produktbilde 2" id="picture3">
+              <img src="https://picsum.photos/400" alt="Lite produktbilde 3" id="picture4">
+            </article>
+            <article id="product-name">
+              <h2>Produktnavn</h2>
+              <a href="#">MERKENAVN</a>
+              <p>5 195 kr inkl. mva.</p>
+              <p>Farge: <strong>Rød</strong></p>
+            </article>
+        </section>
 
-        <aside class="product-img">
-            <h2>Lignende produkter</h2>
-            <article>
+        <aside id="populære-produkter">
+            <h2 class="fix-width">Lignende produkter</h2>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card-width">
                 <img src="https://picsum.photos/400" alt="Produktbilde">
                 <a href="product.html"><h3 class="inline-block-left">Product name</h3></a>
                 <p class="inline-block">Kr 1999</p>
@@ -98,10 +98,10 @@
         <section id="kontakt" class="footer-content">
             <h2>Kontakt</h2>
             <section>
-                <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
-                <p><strong>Telefon:</strong> 69 60 80 00</p>
-                <p><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
-                <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+                <p class="margin-remove"><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                <p class="margin-remove"><strong>Telefon:</strong> 69 60 80 00</p>
+                <p class="margin-remove"><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+                <p class="margin-remove"><strong>Åpningstider:</strong> Stenger 15:00</p>
             </section>
         </section>
         <section class="footer-content">
@@ -114,7 +114,7 @@
         </section>
         <section class="footer-content">
             <h2>Sosiale medier</h2>
-            <ul>
+            <ul id="horizontal">
                 <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
