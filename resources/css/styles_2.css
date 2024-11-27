@@ -226,7 +226,7 @@ footer ul li {
 .form-container input[type="text"],
 .form-container input[type="date"] {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -234,7 +234,7 @@ footer ul li {
 
 .form-container button {
     margin-top: 15px;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 5px;
     background-color: #3b3d3b;
@@ -349,6 +349,22 @@ footer ul li {
 .special {
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+.styling-delivery {
+    padding: 20px;
+}
+
+.delivery-color {
+    color: #989898;
+}
+
+.border-line {
+    border: 2px solid #cecece;
 }
 
 
@@ -548,6 +564,14 @@ footer ul li {
         margin-bottom: 30px;
     }
 
+    .fix-width2 {
+        width: 100%;
+    }
+
+    .fix-width3 {
+        width: auto;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -593,6 +617,53 @@ footer ul li {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .form-container-first {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    .full-width {
+        grid-column: 1 / -1;
+    }
+
+    fieldset .full-width {
+        width: 100%;
+    }
+
+    .styling-delivery {
+        padding: 20px;
+    }
+
+    .delivery-color {
+        color: #989898;
+    }
+
+    .flex-payment {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .payment button {
+        margin-top: 15px;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #3b3d3b;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .payment-font {
+        font-size: x-large;
+        font-weight: bold;
     }
 
 

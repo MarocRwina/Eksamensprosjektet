@@ -70,33 +70,52 @@
         <section class="flex-container-checkout">
             <h2>2. DINE OPPLYSNINGER</h2>
             <p>Leveringsadresse</p>
-            <form class="form-container">
-                <label for="fornavn">Fornavn</label>
-                <input type="text" id="fornavn" name="fornavn" placeholder="Ola*">
-                <label for="etternavn">Etternavn</label>
-                <input type="text" id="etternavn" name="etternavn" placeholder="Nordmann*">
-                <label for="gateadresse">Gateadresse</label>
-                <input type="text" id="gateadresse" name="gateadresse" placeholder="B R A Veien 4*">
-                <label for="postnummer">Postnummer</label>
-                <input type="text" id="postnummer" name="postnummer" placeholder="1757*">
-                <label for="poststed">Poststed</label>
-                <input type="text" id="poststed" name="poststed" placeholder="Halden*">
-                <button type="submit">Lagre</button>
-                <button type="reset">Avbryt</button>
+            <form class="form-container form-container-first">
+                <fieldset>
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" id="fornavn" name="fornavn" placeholder="Ola*">
+                </fieldset>
+                <fieldset>
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" id="etternavn" name="etternavn" placeholder="Nordmann*">
+                </fieldset>
+                <fieldset class="full-width">
+                    <label for="gateadresse">Gateadresse</label>
+                    <input type="text" id="gateadresse" name="gateadresse" placeholder="B R A Veien 4*">
+                </fieldset>
+                <fieldset>
+                    <label for="postnummer">Postnummer</label>
+                    <input type="text" id="postnummer" name="postnummer" placeholder="1757*">
+                </fieldset>
+                <fieldset>
+                    <label for="poststed">Poststed</label>
+                    <input type="text" id="poststed" name="poststed" placeholder="Halden*">
+                </fieldset>
+                    <button class="full-width" type="submit">Lagre</button>
+                    <button class="full-width" type="reset">Avbryt</button>
             </form>
         </section>
 
         <section class="flex-container-checkout">
             <h2>3. LEVERING</h2>
             <form class="radio-group">
-                <input type="radio" id="ekspress-hjem" name="levering" value="ekspress-hjem">
-                <label for="ekspress-hjem"><strong>Ekspress Hjemlevering</strong></label>
+                <fieldset class="styling-delivery border-line">
+                    <input type="radio" id="ekspress-hjem" name="levering" value="ekspress-hjem">
+                    <label for="ekspress-hjem"><strong>Ekspress Hjemlevering</strong></label>
+                    <p class="delivery-color">3-4 Virkedager</p>
+                </fieldset>
                 <br>
-                <input type="radio" id="ekspress-utlevering" name="levering" value="ekspress-utlevering">
-                <label for="ekspress-utlevering"><strong>Ekspress Pakke til utleveringssted</strong></label>
+                <fieldset class="styling-delivery border-line">
+                    <input type="radio" id="ekspress-utlevering" name="levering" value="ekspress-utlevering">
+                    <label for="ekspress-utlevering"><strong>Ekspress Pakke til utleveringssted</strong></label>
+                    <p class="delivery-color">1-3 Virkedager</p>
+                </fieldset>
                 <br>
-                <input type="radio" id="standard-hjem" name="levering" value="standard-hjem">
-                <label for="standard-hjem"><strong>Standard Hjemlevering</strong></label>
+                <fieldset class="styling-delivery border-line">
+                    <input type="radio" id="standard-hjem" name="levering" value="standard-hjem">
+                    <label for="standard-hjem"><strong>Standard Hjemlevering</strong></label>
+                    <p class="delivery-color">5-8 Virkedager</p>
+                </fieldset>
             </form>
         </section>
 
