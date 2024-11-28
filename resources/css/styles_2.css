@@ -27,7 +27,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
 }
 
@@ -67,7 +67,7 @@ header ul li {
 
 
 main {
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
     margin: auto;
     align-items: center;
@@ -96,7 +96,7 @@ main section article img {
 
 
 footer {
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
     margin: auto;
 }
@@ -212,6 +212,11 @@ footer ul li {
 
 .space-paragraph {
     margin-bottom: 10px;
+}
+
+.space-margin-top-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .form-container {
@@ -388,6 +393,16 @@ fieldset {
     padding: 20px;
 }
 
+.fa-regular.fa-star {
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.flex-reviews {
+    display: flex;
+    align-items: center;
+}
+
 
 
 
@@ -472,7 +487,7 @@ fieldset {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 0;
+        padding: 10px;
     }
 
     #populære-kategorier article {
