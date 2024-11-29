@@ -37,33 +37,81 @@
             <h2>1. SHOPPINGBAGEN DIN</h2>
             <article>
                 <figure class="shopping-bag-product-item">
-                    <img src="https://picsum.photos/400" alt="Produktbilde">
+                    <img src="https://picsum.photos/400" alt="Produktbilde 1">
                     <figcaption>
                         <a href="product.html"><h3>PRODUCT NAME</h3></a>
                         <p class="margin-remove">Kr 1999</p>
                         <p class="space-paragraph margin-remove">Farge: rød</p>
+                        <span class="flex-checkout">
+                            <label for="size">Størrelse</label>
+                            <select id="size" name="size" class="select-element-box">
+                                <option value="xsmall">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                            <label for="quantity">Antall</label>
+                            <input class="input-box" type="number" id="quantity" name="quantity" value="1" min="1">
+                        </span>
                     </figcaption>
                 </figure>
+                <article class="icon-right">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </article>
             </article>
             <article>
                 <figure class="shopping-bag-product-item">
-                    <img src="https://picsum.photos/400" alt="Produktbilde">
+                    <img src="https://picsum.photos/400" alt="Produktbilde 2">
                     <figcaption>
                         <a href="product.html"><h3>PRODUCT NAME</h3></a>
                         <p class="margin-remove">Kr 1999</p>
                         <p class="space-paragraph margin-remove">Farge: rød</p>
+                        <span class="flex-checkout">
+                            <label for="size">Størrelse</label>
+                            <select id="size2" name="size2" class="select-element-box">
+                                <option value="xsmall">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                            <label for="quantity">Antall</label>
+                            <input class="input-box" type="number" id="quantity2" name="quantity2" value="1" min="1">
+                        </span>
                     </figcaption>
                 </figure>
+                <article class="icon-right">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </article>
             </article>
             <article>
                 <figure class="shopping-bag-product-item">
-                    <img src="https://picsum.photos/400" alt="Produktbilde">
+                    <img src="https://picsum.photos/400" alt="Produktbilde 3">
                     <figcaption>
                         <a href="product.html"><h3>PRODUCT NAME</h3></a>
                         <p class="margin-remove">Kr 1999</p>
                         <p class="space-paragraph margin-remove">Farge: rød</p>
+                        <span class="flex-checkout">
+                            <label for="size">Størrelse</label>
+                            <select id="size3" name="size3" class="select-element-box">
+                                <option value="xsmall">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                            <label for="quantity">Antall</label>
+                            <input class="input-box" type="number" id="quantity3" name="quantity3" value="1" min="1">
+                        </span>
                     </figcaption>
                 </figure>
+                <article class="icon-right">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </article>
             </article>
         </section>
 
@@ -92,6 +140,17 @@
                     <input type="text" id="poststed" name="poststed" placeholder="Halden*">
                 </fieldset>
             </form>
+            <p class="space-margin-top">Kontaktinformasjon</p>
+            <form class="form-container">
+                <fieldset>
+                    <label for="epost">E-post</label>
+                    <input type="text" id="epost" name="epost" placeholder="Olanordmann@hiof.no*">
+                </fieldset>
+                <fieldset>
+                    <label for="telefon">Telefon</label>
+                    <input type="text" id="telefon" name="telefon" placeholder="+4749***018">
+                </fieldset>
+            </form>
             <article class="form-container">
                 <button class="fix-width2" type="submit">Lagre</button>
                 <button class="fix-width2" type="reset">Avbryt</button>
@@ -105,25 +164,30 @@
                     <input type="radio" id="ekspress-hjem" name="levering" value="ekspress-hjem">
                     <label for="ekspress-hjem"><strong>Ekspress Hjemlevering</strong></label>
                     <p class="delivery-color">3-4 Virkedager</p>
+                    <p class="icon-delivery">59 kr <i class="fa-solid fa-truck-fast"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eligendi cumque aspernatur accusantium, voluptatem voluptate repellendus nulla aut laboriosam ab? Nulla iste officia omnis error, temporibus totam asperiores quibusdam porro?</p>
                 </fieldset>
                 <br>
                 <fieldset class="styling-delivery border-line">
                     <input type="radio" id="ekspress-utlevering" name="levering" value="ekspress-utlevering">
                     <label for="ekspress-utlevering"><strong>Ekspress Pakke til utleveringssted</strong></label>
                     <p class="delivery-color">1-3 Virkedager</p>
+                    <p class="icon-delivery">59 kr <i class="fa-brands fa-dhl"></i></p>
                 </fieldset>
                 <br>
                 <fieldset class="styling-delivery border-line">
                     <input type="radio" id="standard-hjem" name="levering" value="standard-hjem">
                     <label for="standard-hjem"><strong>Standard Hjemlevering</strong></label>
                     <p class="delivery-color">5-8 Virkedager</p>
+                    <p class="icon-delivery">Gratis <i class="fa-solid fa-box"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora unde asperiores.</p>
                 </fieldset>
             </form>
         </section>
 
         <section class="flex-container-checkout border-shopping">
             <h2>4. BETALING</h2>
-            <p><strong>BETAL MED KORT</strong></p>
+            <p><strong>BETAL MED KORT </strong><i class="fa-solid fa-credit-card"></i></p>
             <form class="form-container form-container-first">
                 <fieldset class="full-width">
                     <label for="kortnummer">Kortnummer</label>
